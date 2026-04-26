@@ -8,39 +8,48 @@ Contém **exclusivamente testes** — o código-fonte da aplicação não está 
 ## 📐 Estrutura do Repositório
 
 minhasfinancas-tests/
+│
 ├── backend/
 │   ├── MinhasFinancas.Tests.Unit/
 │   │   ├── Domain/
 │   │   │   ├── PessoaTests.cs
 │   │   │   ├── CategoriaTests.cs
 │   │   │   └── TransacaoTests.cs
+│   │   │
 │   │   └── Application/
 │   │       ├── TransacaoServiceTests.cs
 │   │       ├── PessoaServiceTests.cs
 │   │       └── PessoaValidationTests.cs
+│   │
 │   └── MinhasFinancas.Tests.Integration/
 │       ├── Infrastructure/
 │       │   ├── TestWebApplicationFactory.cs
 │       │   └── IntegrationTestBase.cs
+│       │
 │       └── Api/
 │           ├── PessoasControllerTests.cs
 │           ├── TransacoesControllerTests.cs
 │           └── CategoriasControllerTests.cs
+│
 ├── frontend/
-│   ├── src/tests/
-│   │   ├── unit/
-│   │   │   ├── apiUtils.test.ts
-│   │   │   ├── schemas.test.ts
-│   │   │   └── mappers.test.ts
-│   │   └── e2e/
-│   │       ├── pessoas.spec.ts
-│   │       ├── categorias.spec.ts
-│   │       └── transacoes.spec.ts
+│   └── src/tests/
+│       ├── unit/
+│       │   ├── apiUtils.test.ts
+│       │   ├── schemas.test.ts
+│       │   └── mappers.test.ts
+│       │
+│       └── e2e/
+│           ├── pessoas.spec.ts
+│           ├── categorias.spec.ts
+│           └── transacoes.spec.ts
+│
 │   ├── vitest.config.ts
 │   └── playwright.config.ts
+│
 ├── docs/
 │   ├── BUG-001-invalid-operation-exception-500.md
 │   └── BUG-002-003-frontend-validation-gaps.md
+│
 └── README.md
 
 
